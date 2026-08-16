@@ -2415,16 +2415,25 @@
                 height: 48px;
                 flex-shrink: 0;
                 background: #25D366;
-                border-radius: 4px;
+                border-radius: 0;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 text-decoration: none;
+                overflow: hidden;
+                box-shadow: none;
             }
 
             .sticky-cta-wa svg {
                 width: 22px;
                 height: 22px;
+            }
+
+            /* Hide circular float so it doesn’t peek behind the sticky WA button */
+            body.sticky-cta-open .wa-float {
+                opacity: 0;
+                visibility: hidden;
+                pointer-events: none;
             }
         }
 

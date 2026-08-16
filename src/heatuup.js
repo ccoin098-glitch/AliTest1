@@ -385,9 +385,11 @@
 		window.addEventListener( 'scroll', function () {
 			if ( window.scrollY > 300 && ! shown ) {
 				cta.classList.add( 'visible' );
+				document.body.classList.add( 'sticky-cta-open' );
 				shown = true;
 			} else if ( window.scrollY <= 100 && shown ) {
 				cta.classList.remove( 'visible' );
+				document.body.classList.remove( 'sticky-cta-open' );
 				shown = false;
 			}
 		}, { passive: true } );
