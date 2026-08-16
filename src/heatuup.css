@@ -1156,12 +1156,19 @@
             border-top: 1px solid var(--border-subtle);
         }
 
+        .dock-stat {
+            flex: 1;
+            min-width: 0;
+        }
+
         .dock-stat-val {
             font-family: 'Playfair Display', serif;
             font-size: 36px;
             font-weight: 300;
             color: var(--orange-light);
             display: block;
+            white-space: nowrap;
+            line-height: 1.1;
         }
 
         .dock-stat-lbl {
@@ -1170,6 +1177,8 @@
             text-transform: uppercase;
             color: var(--text-primary);
             margin-top: 4px;
+            display: block;
+            line-height: 1.45;
         }
 
         /* ==============================
@@ -1947,6 +1956,21 @@
 
             .dock-visual {
                 aspect-ratio: 16/10;
+            }
+
+            .dock-stat-row {
+                display: grid;
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+                gap: 12px;
+            }
+
+            .dock-stat-val {
+                font-size: 28px;
+            }
+
+            .dock-stat-lbl {
+                font-size: 9px;
+                letter-spacing: 0.08em;
             }
 
             .steps-grid {
