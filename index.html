@@ -1,0 +1,853 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="HeatUup® — Draadloze verwarmde terraskussens. Geen gas, geen kabels. Verleng uw terrasseizoen." />
+    <title>HeatUup® — Warm buiten. Elk seizoen.</title>
+    <link rel="icon" type="image/png" href="https://heatuup.com/wp-content/uploads/2025/07/cropped-cropped-Logo-met-batterij-%EF%BF%BD-1-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&family=Inter:wght@200;300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="preload" as="image" href="https://heatuup.com/wp-content/themes/heatuup-child/assets/img/hero-poster.jpg" fetchpriority="high" />
+    <link rel="stylesheet" href="/src/heatuup.css" />
+  </head>
+  <body>
+<nav id="navbar">
+	<a href="#" class="logo-mark">
+		<img src="https://heatuup.com/wp-content/themes/heatuup-child/assets/img/logo.png" alt="HeatUup®">
+	</a>
+
+	<ul class="nav-center">
+		<li><a href="#product">Product</a></li>
+		<li><a href="#how-it-works">Hoe werkt onze technologie?</a></li>
+		<li><a href="#collection">Collectie</a></li>
+		<li><a href="#reviews">Reviews</a></li>
+		<li><a href="#faq">FAQ</a></li>
+	</ul>
+	<div class="nav-actions">
+			<div class="lang-dropdown" data-lang-dropdown="" data-langs="en,nl,fr,de,it,es">
+		<button type="button" class="lang-dropdown__toggle notranslate" aria-haspopup="true" aria-expanded="false" aria-label="Language">
+			<span class="lang-dropdown__current">NL</span>
+			<svg class="lang-dropdown__chevron" width="9" height="9" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+				<path d="M2 4l4 4 4-4"></path>
+			</svg>
+		</button>
+		<ul class="lang-dropdown__menu" role="menu"><li><a href="#" data-gt-lang="en" class="gt-current-lang notranslate">EN</a></li><li><a href="#" data-gt-lang="nl" class="notranslate">NL</a></li><li><a href="#" data-gt-lang="fr" class="notranslate">FR</a></li><li><a href="#" data-gt-lang="de" class="notranslate">DE</a></li><li><a href="#" data-gt-lang="it" class="notranslate">IT</a></li><li><a href="#" data-gt-lang="es" class="notranslate">ES</a></li></ul>
+	</div>
+			<a href="#contact" class="nav-cta">Neem contact op</a>
+	</div>
+
+	<button class="hamburger" id="hamburger" aria-label="Open menu">
+		<span></span><span></span><span></span>
+	</button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true">
+	<button class="mobile-close" id="mobileClose" aria-label="Close menu">×</button>
+	<a href="#product" onclick="closeMobileMenu()">Product</a>
+	<a href="#how-it-works" onclick="closeMobileMenu()">Hoe werkt onze technologie?</a>
+	<a href="#collection" onclick="closeMobileMenu()">Collectie</a>
+	<a href="#reviews" onclick="closeMobileMenu()">Reviews</a>
+	<a href="#faq" onclick="closeMobileMenu()">FAQ</a>
+	<a href="#contact" onclick="closeMobileMenu()">Contact</a>
+	<a href="#contact" class="nav-cta mobile-cta" onclick="closeMobileMenu()">Neem contact op</a>
+</div>
+
+<!-- ============================================================
+	 HERO
+============================================================ -->
+<section class="hero">
+	<video class="hero-video" autoplay="" muted="" loop="" playsinline="" poster="https://heatuup.com/wp-content/themes/heatuup-child/assets/img/hero-poster.jpg">
+		<source src="https://heatuup.com/wp-content/uploads/2026/06/heatuup-home-hero-1080p.mp4" type="video/mp4">
+	</video>
+	<div class="hero-overlay"></div>
+	<div class="hero-grid"></div>
+	<div class="hero-glow"></div>
+
+	<p class="hero-eyebrow fade-up">Draadloze verwarmde terraskussens</p>
+
+	<div class="hero-badge fade-up">
+		<span class="hero-badge-dot"></span>
+		<span class="hero-badge-text"><strong>100+</strong> locaties in heel Europa</span>
+	</div>
+
+	<h1 class="fade-up delay-1">
+		Warm buiten.<br>
+		<em>Elk seizoen.</em>
+	</h1>
+
+	<p class="gt-block hero-sub fade-up delay-2">
+		Geen gas. Geen kabels. Geen compromissen.<br>
+		Verwen uw gasten en verleng het terrasseizoen.
+	</p>
+
+	<div class="hero-actions fade-up delay-3">
+		<a href="#contact" class="btn-primary">Neem contact op</a>
+		<a href="#product" class="btn-ghost">Ontdek het product</a>
+	</div>
+
+	<div class="hero-stats fade-up delay-4">
+		<div class="hero-stat">
+			<span class="hero-stat-value">8+</span>
+			<span class="hero-stat-label">Urenlange warmte</span>
+		</div>
+		<div class="hero-stat">
+			<span class="hero-stat-value">0</span>
+			<span class="hero-stat-label">CO₂-uitstoot</span>
+		</div>
+		<div class="hero-stat">
+			<span class="hero-stat-value">10</span>
+			<span class="hero-stat-label">Batterijen per dockingstation</span>
+		</div>
+		<div class="hero-stat">
+			<span class="hero-stat-value">3</span>
+			<span class="hero-stat-label">Warmte-instellingen</span>
+		</div>
+	</div>
+
+	<div class="hero-scroll" aria-hidden="true">
+		<div class="scroll-line"></div>
+		<span>Scroll</span>
+	</div>
+</section>
+
+<!-- ============================================================
+	 MARQUEE
+============================================================ -->
+<div class="marquee-bar" aria-hidden="true">
+	<div class="marquee-track">
+		<div class="marquee-item"><span>Geen gas</span>
+			<div class="dot"></div>
+		</div>
+		<div class="marquee-item"><span>Geen kabels</span>
+			<div class="dot"></div>
+		</div>
+		<div class="marquee-item"><span>8 uur warmte</span>
+			<div class="dot"></div>
+		</div>
+		<div class="marquee-item"><span>Draadloos opladen</span>
+			<div class="dot"></div>
+		</div>
+		<div class="marquee-item"><span>CE gecertificeerd</span>
+			<div class="dot"></div>
+		</div>
+		<div class="marquee-item"><span>Duurzaam</span>
+			<div class="dot"></div>
+		</div>
+		<div class="marquee-item"><span>Automatische stopsensor</span>
+			<div class="dot"></div>
+		</div>
+		<div class="marquee-item"><span>Premium kwaliteit</span>
+			<div class="dot"></div>
+		</div>
+		<div class="marquee-item"><span>Subsidie-gerechtigd</span>
+			<div class="dot"></div>
+		</div>
+		<!-- duplicate -->
+		<div class="marquee-item"><span>Geen gas</span>
+			<div class="dot"></div>
+		</div>
+		<div class="marquee-item"><span>Geen kabels</span>
+			<div class="dot"></div>
+		</div>
+		<div class="marquee-item"><span>8 uur warmte</span>
+			<div class="dot"></div>
+		</div>
+		<div class="marquee-item"><span>Draadloos opladen</span>
+			<div class="dot"></div>
+		</div>
+		<div class="marquee-item"><span>CE gecertificeerd</span>
+			<div class="dot"></div>
+		</div>
+		<div class="marquee-item"><span>Duurzaam</span>
+			<div class="dot"></div>
+		</div>
+		<div class="marquee-item"><span>Automatische stopsensor</span>
+			<div class="dot"></div>
+		</div>
+		<div class="marquee-item"><span>Premium kwaliteit</span>
+			<div class="dot"></div>
+		</div>
+		<div class="marquee-item"><span>Subsidie-gerechtigd</span>
+			<div class="dot"></div>
+		</div>
+	</div>
+</div>
+
+<!-- ============================================================
+	 PRODUCT INTRO
+============================================================ -->
+<section class="product-intro" id="product">
+	<div class="product-grid">
+		<div class="product-visual fade-up">
+			<div class="product-visual-inner"></div>
+			<div class="product-visual-overlay"></div>
+		</div>
+
+		<div class="product-content">
+			<p class="section-eyebrow fade-up">Het product</p>
+			<h2 class="section-title fade-up delay-1">
+				Warmte als<br><em>een dienst</em>
+			</h2>
+			<div class="product-concept fade-up delay-2">
+				<p>
+					HeatUup is geen eenmalige aankoop, maar een <strong>warmtecontract</strong>:
+					draadloze verwarmde terraskussens inclusief batterijen, laadstation, garantie en service.
+				</p>
+				<p>
+					U betaalt eenmalig €50 installatiekosten per kussen, daarna €5 per maand.
+					Wij leveren, onderhouden en vernieuwen — u houdt het terras warm en gevuld, seizoen na seizoen.
+				</p>
+				<ul class="product-concept-list">
+					<li>Geen grote investering vooraf</li>
+					<li>Geen gas, geen kabels</li>
+					<li>Levering, garantie en service inbegrepen</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- ============================================================
+	 FEATURES
+============================================================ -->
+<section>
+	<div class="features-section">
+		<div class="features-header">
+			<div>
+				<p class="section-eyebrow fade-up">Waarom HeatUup?</p>
+				<h2 class="section-title fade-up delay-1">
+					Ontworpen voor<br><em>hospitality</em>
+				</h2>
+			</div>
+		</div>
+
+		<div class="features-grid">
+			<div class="feature-card fade-up">
+				<span class="feature-number">01</span>
+				<h3 class="feature-title">Automatische stop bij het opstaan</h3>
+			</div>
+			<div class="feature-card fade-up delay-1">
+				<span class="feature-number">02</span>
+				<h3 class="feature-title">Draadloos oplaadsysteem</h3>
+			</div>
+			<div class="feature-card fade-up delay-2">
+				<span class="feature-number">03</span>
+				<h3 class="feature-title">Wasbare binnenvoering</h3>
+			</div>
+			<div class="feature-card fade-up">
+				<span class="feature-number">04</span>
+				<h3 class="feature-title">Nul emissies op locatie</h3>
+			</div>
+			<div class="feature-card fade-up delay-1">
+				<span class="feature-number">05</span>
+				<h3 class="feature-title">Subsidie-gerechtigd</h3>
+			</div>
+			<div class="feature-card fade-up delay-2">
+				<span class="feature-number">06</span>
+				<h3 class="feature-title">Mogelijkheid tot branding van de locatie</h3>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- ============================================================
+	 VENUE STRIP — replace names below with real client venues
+============================================================ -->
+<div class="venue-strip">
+	<div class="venue-strip-inner">
+		<span class="venue-strip-label">Vertrouwd door</span>
+		<div class="venue-strip-items">
+			<span class="venue-item">Restaurants</span>
+			<span class="venue-item">Hotels</span>
+			<span class="venue-item">Strandclubs</span>
+			<span class="venue-item">Grote cafés</span>
+			<span class="venue-item">brasseries</span>
+			<span class="venue-item">Locaties voor evenementen</span>
+		</div>
+	</div>
+</div>
+
+<!-- ============================================================
+	 STATEMENT
+============================================================ -->
+<section class="statement">
+	<div class="statement-bg"></div>
+	<div class="statement-content">
+		<div class="statement-divider fade-up"></div>
+		<blockquote class="statement-quote fade-up delay-1">
+			"Onze gasten verbleven <em>negentig minuten langer</em> bij koud weer. De investering had zichzelf binnen twee weken terugverdiend."
+		</blockquote>
+		<p class="statement-author fade-up delay-2">— Restauranteigenaar, Amsterdam</p>
+	</div>
+</section>
+
+<!-- ============================================================
+	 CINEMATIC VIDEO SECTION
+============================================================ -->
+<section class="cinematic-video-section">
+	<video class="cinematic-video" autoplay="" muted="" loop="" playsinline="">
+		<source src="https://heatuup.com/wp-content/uploads/2026/06/heatuup-home-hero-1080p.mp4" type="video/mp4">
+	</video>
+	<div class="cinematic-overlay"></div>
+	<div class="cinematic-text fade-up">
+		<p class="section-eyebrow">The Experience</p>
+		<h2>Warmte.<br><em>Zonder compromissen.</em></h2>
+	</div>
+</section>
+
+<!-- ============================================================
+	 ROI CALCULATOR
+============================================================ -->
+<section data-wpr-lazyrender="1" class="roi-section">
+	<div class="roi-inner">
+		<div class="roi-left">
+			<p class="section-eyebrow fade-up">De businesscase</p>
+			<h2 class="section-title fade-up delay-1">
+				Bereken uw<br><em>extra inkomsten</em>
+			</h2>
+			<p class="fade-up delay-2" style="margin-top:24px; font-size:15px; color:var(--text-secondary); line-height:1.8;">
+				Elke extra week dat uw terras open blijft, betekent directe inkomsten. Pas de schuifregelaars aan om te zien wat HeatUup aan uw winst toevoegt.
+			</p>
+		</div>
+		<div class="roi-card fade-up delay-1">
+			<div class="roi-slider-group">
+				<div class="roi-slider-label">
+					<span class="roi-slider-name">Terrasstoelen</span>
+					<span class="roi-slider-val" id="roi-seats-val">50</span>
+				</div>
+				<input type="range" class="roi-range" id="roi-seats" min="10" max="200" value="50" step="5">
+			</div>
+			<div class="roi-slider-group">
+				<div class="roi-slider-label">
+					<span class="roi-slider-name">Verlengd terrasseizoen</span>
+					<span class="roi-slider-val" id="roi-weeks-val">8 week</span>
+				</div>
+				<input type="range" class="roi-range" id="roi-weeks" min="2" max="24" value="8" step="1">
+			</div>
+			<div class="roi-slider-group">
+				<div class="roi-slider-label">
+					<span class="roi-slider-name">Gemiddelde uitgaven per couvert</span>
+					<span class="roi-slider-val" id="roi-spend-val">€30</span>
+				</div>
+				<input type="range" class="roi-range" id="roi-spend" min="10" max="100" value="30" step="5">
+			</div>
+			<div class="roi-divider"></div>
+			<div class="roi-result-row">
+				<span class="roi-result-label">Geschatte extra omzet</span>
+				<span class="roi-result-val roi-highlight" id="roi-revenue">€126,000</span>
+			</div>
+			<div class="roi-result-row">
+				<span class="roi-result-label">Jaarlijkse kosten voor HeatUup</span>
+				<span class="roi-result-val" id="roi-cost">€5,500</span>
+			</div>
+			<div class="roi-result-row">
+				<span class="roi-result-label">Netto winst</span>
+				<span class="roi-result-val" id="roi-net">€120,500</span>
+			</div>
+			<p class="roi-disclaimer">Schatting gebaseerd op 1.5 couverts per stoel per avond, 5 avonden per week. Jaarlijkse kosten: €50 eenmalige vergoeding per kussen + €5 per maand per kussen. Resultaten kunnen variëren afhankelijk van de locatie en het seizoen.</p>
+		</div>
+	</div>
+</section>
+
+<!-- ============================================================
+	 PHOTO GRID
+============================================================ -->
+<section data-wpr-lazyrender="1" class="photo-grid-section">
+	<div class="photo-grid">
+		<div class="photo-tile fade-up">
+			<div class="photo-tile-inner" style="background-image:url('https://heatuup.com/wp-content/themes/heatuup-child/assets/img/DSC01761-scaled.jpg')"></div>
+		</div>
+		<div class="photo-tile fade-up delay-1">
+			<div class="photo-tile-inner" style="background-image:url('https://heatuup.com/wp-content/themes/heatuup-child/assets/img/DSC01625-scaled.jpg')"></div>
+		</div>
+		<div class="photo-tile fade-up delay-2">
+			<div class="photo-tile-inner" style="background-image:url('https://heatuup.com/wp-content/themes/heatuup-child/assets/img/DSC01695-scaled.jpg')"></div>
+		</div>
+		<div class="photo-tile fade-up delay-3">
+			<div class="photo-tile-inner" style="background-image:url('https://heatuup.com/wp-content/themes/heatuup-child/assets/img/DSC01681-scaled.jpg')"></div>
+		</div>
+	</div>
+</section>
+
+<!-- ============================================================
+	 DOCK SHOWCASE
+============================================================ -->
+<section data-wpr-lazyrender="1" class="dock-section" id="how-it-works">
+	<div class="dock-inner">
+		<div class="dock-content">
+			<p class="section-eyebrow fade-up">Het laadsysteem</p>
+			<h2 class="section-title fade-up delay-1">
+				10 batterijen.<br><em>Een nacht.</em>
+			</h2>
+			<p class="fade-up delay-2">
+				Het CE-gecertificeerde laadstation laadt 10 accu's tegelijk op via een langzaam laadsysteem. 's Ochtends zijn alle accu's volledig opgeladen, klaar voor een complete terrasdag zonder onderbrekingen.
+			</p>
+			<p class="fade-up delay-2">
+				Het LED-display per accu geeft de exacte laadstatus weer. Geen verrassingen, altijd de controle.
+			</p>
+
+			<div class="veger-block fade-up delay-3">
+				<p class="veger-label">Mogelijk gemaakt door VEGER</p>
+				<p class="gt-block">Een van 's werelds toonaangevende pioniers op het gebied van batterijen. Technologie van de volgende generatie, ontworpen voor een lange levensduur — vertrouwd door miljoenen. <em>Inclusief 12 maanden garantie.</em></p>
+			</div>
+
+			<div class="dock-stat-row fade-up delay-3">
+				<div>
+					<span class="dock-stat-val">10</span>
+					<span class="dock-stat-lbl">Batterijen per dockingstation</span>
+				</div>
+				<div>
+					<span class="dock-stat-val">8 uur +</span>
+					<span class="dock-stat-lbl">Per lading</span>
+				</div>
+				<div>
+					<span class="dock-stat-val">CE</span>
+					<span class="dock-stat-lbl">Certified</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="dock-visual fade-up delay-1">
+			<div class="dock-visual-img"></div>
+		</div>
+	</div>
+</section>
+
+<!-- ============================================================
+	 COLLECTIONS
+============================================================ -->
+<section data-wpr-lazyrender="1" class="collections-section" id="collection">
+	<div class="collections-inner">
+		<div class="collections-header">
+			<div>
+				<p class="section-eyebrow fade-up">Collectie 2026</p>
+				<h2 class="section-title fade-up delay-1">
+					Kies uw<br><em>Collectie</em>
+				</h2>
+			</div>
+			<a href="#contact" class="btn-ghost fade-up delay-2">Neem contact op</a>
+		</div>
+
+		<div class="collections-grid">
+			<div class="collection-card fade-up">
+				<div class="collection-visual">
+					<img
+						class="collection-photo"
+						src="https://heatuup.com/wp-content/themes/heatuup-child/assets/img/DSC01625-scaled.jpg"
+						alt="NatureUp Olefin terraskussen voorbeeld"
+						loading="lazy"
+					>
+					<div class="collection-visual-overlay"></div>
+					<div class="collection-visual-tag">NatureUp-collectie</div>
+				</div>
+				<div class="collection-body">
+					<h3 class="collection-name">Olefin kussen</h3>
+					<p class="collection-desc">8 kleuren · Waterdicht TPU · Inclusief batterij</p>
+					<p class="collection-examples-label">Voorbeeldkleuren</p>
+					<div class="collection-swatches" aria-label="Olefin kleurvoorbeelden">
+						<span class="collection-swatch" style="background:#2F3430" title="Antraciet"></span>
+						<span class="collection-swatch" style="background:#6B6E63" title="Olijf"></span>
+						<span class="collection-swatch" style="background:#C4B7A2" title="Zand"></span>
+						<span class="collection-swatch" style="background:#8B5E4B" title="Terracotta"></span>
+						<span class="collection-swatch" style="background:#3D4F5C" title="Ocean"></span>
+						<span class="collection-swatch" style="background:#E8E2D6" title="Crème"></span>
+						<span class="collection-swatch" style="background:#5C4033" title="Espresso"></span>
+						<span class="collection-swatch" style="background:#7A8B6E" title="Sage"></span>
+					</div>
+					<div class="collection-price-row">
+						<span class="collection-price-label">Vanaf</span>
+						<span class="collection-price">€ 200 excl. BTW</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="collection-card fade-up delay-1">
+				<div class="collection-visual">
+					<img
+						class="collection-photo"
+						src="https://heatuup.com/wp-content/themes/heatuup-child/assets/img/DSC01681-scaled.jpg"
+						alt="Teddybeer Schapenvacht terraskussen voorbeeld"
+						loading="lazy"
+					>
+					<div class="collection-visual-overlay"></div>
+					<div class="collection-visual-tag">Teddybeercollectie</div>
+				</div>
+				<div class="collection-body">
+					<h3 class="collection-name">Schapenvacht kussen</h3>
+					<p class="collection-desc">3 premium kleuren · Maximale isolatie · Inclusief batterij</p>
+					<p class="collection-examples-label">Voorbeeldkleuren</p>
+					<div class="collection-swatches" aria-label="Schapenvacht kleurvoorbeelden">
+						<span class="collection-swatch" style="background:#F2EDE4" title="Ivoor"></span>
+						<span class="collection-swatch" style="background:#B8A48A" title="Camel"></span>
+						<span class="collection-swatch" style="background:#4A4038" title="Taupe"></span>
+					</div>
+					<div class="collection-price-row">
+						<span class="collection-price-label">Vanaf</span>
+						<span class="collection-price">€ 250 excl. BTW</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- ============================================================
+	 HEAT AGREEMENT
+============================================================ -->
+<section data-wpr-lazyrender="1" class="subsidy-section">
+	<div class="subsidy-inner">
+		<div class="fade-up">
+			<div class="subsidy-amount" style="font-size:clamp(48px,7vw,96px);">€5<span style="font-size:0.45em;color:var(--text-secondary);">/ mo</span></div>
+			<p class="subsidy-amount-label">Per kussen, na aftrek van een eenmalige instelkosten van €50 per kussen.</p>
+			<ul class="subsidy-list">
+				<li><span class="subsidy-dot"></span><span>Contract van 48 maanden, automatisch verlengd. Opzegbaar met een schriftelijke opzegtermijn van 12 maanden.</span>
+				</li>
+				<li><span class="subsidy-dot"></span><span>Maandelijks gefactureerd via Stripe. Jaarlijkse opknapbeurt inbegrepen voor €50 per kussen, een complete vernieuwing van uw hele terras eenmaal per jaar.</span>
+				</li>
+				<li><span class="subsidy-dot"></span><span>Je hoeft de reparatieset niet te gebruiken. Handig als er iets gemorst is of als het versleten is. De Zwitserse wetgeving is van toepassing.</span>
+				</li>
+			</ul>
+		</div>
+		<div class="fade-up delay-1">
+			<p class="section-eyebrow">De warmteovereenkomst</p>
+			<h2 class="section-title" style="margin-top:16px;">
+				Warmte als<br><em>een dienst</em>
+			</h2>
+			<p style="margin-top:28px; font-size:15px; color:var(--text-secondary); line-height:1.8;">
+				Geen grote investering vooraf. U betaalt eenmalig €50 installatiekosten per kussen, daarna €5 per maand. HeatUup regelt de levering, garantie en service. U zorgt ervoor dat uw terras altijd gevuld is.
+			</p>
+			<a href="#contact" class="btn-ghost" style="display:inline-flex; margin-top:40px;">Neem contact op</a>
+		</div>
+	</div>
+</section>
+
+<!-- ============================================================
+	 TESTIMONIALS
+============================================================ -->
+<section data-wpr-lazyrender="1" class="testimonials-section" id="reviews">
+	<div class="testimonials-inner">
+		<div class="testimonials-header">
+			<p class="section-eyebrow fade-up">Reviews</p>
+			<h2 class="section-title fade-up delay-1">
+				Wat onze klanten<br><em>zeggen</em>
+			</h2>
+		</div>
+		<div class="testimonials-grid">
+			<div class="testimonial-card fade-up">
+				<span class="testimonial-mark">"</span>
+				<p class="testimonial-text">De kussens zijn echt een uitkomst. Gasten vragen er nu specifiek om. Ook op koude avonden zit het terras nog steeds vol, dat was voorheen nooit het geval.</p>
+				<div class="testimonial-divider"></div>
+				<div class="testimonial-name">Marco van der Berg</div>
+				<div class="testimonial-role">Eigenaar, Utrecht</div>
+			</div>
+			<div class="testimonial-card fade-up delay-1">
+				<span class="testimonial-mark">"</span>
+				<p class="testimonial-text">Geen gedoe meer met gasflessen. Het systeem werkt perfect: 's avonds aanmeren, 's ochtends volledig opgeladen. Mijn personeel is er dol op. Beste investering van het jaar.</p>
+				<div class="testimonial-divider"></div>
+				<div class="testimonial-name">Sarah Jansen</div>
+				<div class="testimonial-role">F&amp;B Manager, Arnhem</div>
+			</div>
+			<div class="testimonial-card fade-up delay-2">
+				<span class="testimonial-mark">"</span>
+				<p class="testimonial-text">We hebben onze terrasomzet in oktober en november met 35% verhoogd. De investering heeft zichzelf binnen drie weken terugverdiend. Een echte aanrader voor elke horecaondernemer.</p>
+				<div class="testimonial-divider"></div>
+				<div class="testimonial-name">Thomas de Wit</div>
+				<div class="testimonial-role">Directeur, Amsterdam</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- ============================================================
+	 FAQ
+============================================================ -->
+<section data-wpr-lazyrender="1" class="faq-section" id="faq">
+	<div class="faq-inner">
+		<div class="faq-header">
+			<p class="section-eyebrow fade-up">FAQ</p>
+			<h2 class="section-title fade-up delay-1">
+				Veelgestelde<br><em>vragen</em>
+			</h2>
+		</div>
+
+		<div class="faq-item fade-up">
+			<div class="faq-q">
+				<span>Wat is de warmteovereenkomst?</span>
+				<span class="faq-icon"></span>
+			</div>
+			<div class="faq-a">
+				<p class="faq-a-inner">Het verwarmingscontract is ons servicemodel. U betaalt eenmalig € 50 installatiekosten per kussen, daarna € 5 per maand per kussen. Het contract heeft een looptijd van 48 maanden en wordt automatisch verlengd. Opzegging vereist een schriftelijke opzegtermijn van 12 maanden. Facturering vindt maandelijks plaats via Stripe. Inbegrepen is een jaarlijkse onderhoudsbeurt voor € 50 per kussen: een complete opfrisbeurt van uw gehele terras eenmaal per jaar. U hoeft er geen gebruik van te maken, maar het is beschikbaar voor het geval er iets gemorst wordt of het kussen slijt.</p>
+			</div>
+		</div>
+
+		<div class="faq-item fade-up">
+			<div class="faq-q">
+				<span>Wat gebeurt er als een gast opstaat?</span>
+				<span class="faq-icon"></span>
+			</div>
+			<div class="faq-a">
+				<p class="faq-a-inner">Een ingebouwde druksensor schakelt het kussen automatisch uit zodra een gast opstaat. Geen tussenkomst van personeel nodig. Dit voorkomt energieverspilling en verlengt de levensduur van de batterij gedurende de dag.</p>
+			</div>
+		</div>
+
+		<div class="faq-item fade-up">
+			<div class="faq-q">
+				<span>Is het kussen weerbestendig?</span>
+				<span class="faq-icon"></span>
+			</div>
+			<div class="faq-a">
+				<p class="faq-a-inner">Ja. De Olefin buitenstof is voorzien van een volledig waterdichte TPU-coating, bestand tegen regen, wind en condensatie. De elektronica is volledig afgedicht. Het Sheepskin-model is geschikt voor droge, koude omstandigheden; voor terrassen die aan de elementen zijn blootgesteld, raden we de Olefin aan.</p>
+			</div>
+		</div>
+
+		<div class="faq-item fade-up">
+			<div class="faq-q">
+				<span>Hoe werkt het laadsysteem?</span>
+				<span class="faq-icon"></span>
+			</div>
+			<div class="faq-a">
+				<p class="faq-a-inner">Het laadstation laadt tot wel 10 accu's tegelijk op via een langzaam laadsysteem (CE-gecertificeerd). Elk accuvak heeft een led-display dat de laadstatus weergeeft. Sluit de accu's aan bij sluitingstijd en ze zijn volledig opgeladen bij het openen. Eén laadstation biedt plaats aan 10 kussens; extra laadstations kunnen worden toegevoegd voor grotere terrassen.</p>
+			</div>
+		</div>
+
+		<div class="faq-item fade-up">
+			<div class="faq-q">
+				<span>Zijn er daadwerkelijk subsidies beschikbaar hiervoor?</span>
+				<span class="faq-icon"></span>
+			</div>
+			<div class="faq-a">
+				<p class="faq-a-inner">Ja, omdat HeatUup een warmtecontract is en geen productaankoop, komt het in aanmerking als duurzaamheidsinvestering binnen veel Nederlandse gemeentelijke klimaatprogramma's. Er is tot € 10,000 per locatie mogelijk. De voorwaarden zijn afhankelijk van uw gemeente.</p>
+			</div>
+		</div>
+
+		<div class="faq-item fade-up">
+			<div class="faq-q">
+				<span>Wat is de minimale bestelling?</span>
+				<span class="faq-icon"></span>
+			</div>
+			<div class="faq-a">
+				<p class="faq-a-inner">Het minimum is 10 kussens. We stemmen elk voorstel af op de grootte en indeling van uw terras, inclusief het juiste aantal laadplatformen en accu's. Levering in heel Europa.</p>
+			</div>
+		</div>
+
+		<div class="faq-item fade-up">
+			<div class="faq-q">
+				<span>Wat houdt de jaarlijkse onderhoudsbeurt in?</span>
+				<span class="faq-icon"></span>
+			</div>
+			<div class="faq-a">
+				<p class="faq-a-inner">Eenmaal per jaar kunt u een complete vernieuwing van uw terras aanvragen voor € 50 per kussen. Elk kussen wordt vervangen door een nieuw exemplaar van hetzelfde model en dezelfde kleur. U hoeft het niet te gebruiken, maar het is er voor het geval er iets op gemorst wordt, het kussen versleten is of u gewoon een frisse start wilt voor het nieuwe seizoen.</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- ============================================================
+	 CONTACT
+============================================================ -->
+<section class="cta-section" id="contact">
+	<div class="cta-ambient"></div>
+	<div class="cta-inner">
+		<div class="cta-content">
+			<p class="section-eyebrow fade-up">Start</p>
+			<h2 class="section-title fade-up delay-1">
+				Verleng uw<br><em>terrasseizoen</em>
+			</h2>
+			<p class="fade-up delay-2">Vul het formulier in en ontvang binnen 24 uur een voorstel op maat. Inclusief informatie over beschikbare subsidies in uw gemeente.</p>
+			<p class="fade-up delay-2">Minimale bestelling: 10 kussens. Levering in heel Europa.</p>
+
+			<div class="cta-perks fade-up delay-3">
+				<div class="cta-perk">
+					<div class="cta-perk-dot"></div>
+					<span>Verwarmingsovereenkomst, eenmalige kosten van €50 per kussen, daarna €5 per maand per kussen.</span>
+				</div>
+				<div class="cta-perk">
+					<div class="cta-perk-dot"></div>
+					<span>Inclusief batterij</span>
+				</div>
+				<div class="cta-perk">
+					<div class="cta-perk-dot"></div>
+					<span>Jaarlijkse onderhoudsbeurt inbegrepen voor €50 per kussen, complete opfrisbeurt van het terras eenmaal per jaar.</span>
+				</div>
+				<div class="cta-perk">
+					<div class="cta-perk-dot"></div>
+					<span>Informatie over subsidies via de gemeente op aanvraag.</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="contact-form fade-up delay-2">
+			<h3 class="form-title">Neem contact op</h3>
+
+			
+                
+			<form class="quote-form" id="quote-form" onsubmit="event.preventDefault(); alert('Bedankt! We nemen binnen 24 uur contact met u op.'); this.reset();">
+				<p class="form-required-legend">"<span>*</span>" Vul de verplichte velden in</p>
+				<div class="form-row">
+					<div class="form-group">
+						<label class="form-label" for="first_name">Voornaam*</label>
+						<input class="form-input" type="text" id="first_name" name="first_name" required placeholder="Voornaam">
+					</div>
+					<div class="form-group">
+						<label class="form-label" for="last_name">Achternaam*</label>
+						<input class="form-input" type="text" id="last_name" name="last_name" required placeholder="Achternaam">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="form-label" for="email">E-mailadres*</label>
+					<input class="form-input" type="email" id="email" name="email" required placeholder="naam@locatie.com">
+				</div>
+				<div class="form-group">
+					<label class="form-label" for="phone">Telefoonnummer</label>
+					<input class="form-input" type="tel" id="phone" name="phone" placeholder="Vul hier uw telefoonnummer in">
+				</div>
+				<div class="form-group">
+					<label class="form-label" for="venue">Locatienaam</label>
+					<input class="form-input" type="text" id="venue" name="venue" placeholder="Naam van uw locatie">
+				</div>
+				<div class="form-row">
+					<div class="form-group">
+						<label class="form-label" for="venue_type">Locatietype</label>
+						<select class="form-input" id="venue_type" name="venue_type">
+							<option value="">Selecteer type</option>
+							<option>Restaurant</option>
+							<option>Hotels</option>
+							<option>Café / Bar</option>
+							<option>Strandclub</option>
+							<option>Evenementenlocatie</option>
+							<option>Brasserie / Grand Café</option>
+							<option>Overige</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label class="form-label" for="seats">aantal zitplaatsen</label>
+						<input class="form-input" type="number" id="seats" name="seats" min="10" placeholder="Min. 10">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="form-label" for="city">Stad / Gemeente</label>
+					<input class="form-input" type="text" id="city" name="city" placeholder="Amsterdam">
+				</div>
+				<button type="submit" class="form-submit">Neem contact op</button>
+			</form>
+
+			<p class="form-note">Minimaal 10 zitplaatsen, reactie binnen 24 uur.</p>
+		</div>
+	</div>
+</section>
+
+<!-- ============================================================
+	 FOOTER
+============================================================ -->
+<footer data-wpr-lazyrender="1">
+	<div class="footer-top">
+		<div class="footer-logo-wrap">
+			<a href="#" class="logo-mark">
+				<img src="https://heatuup.com/wp-content/themes/heatuup-child/assets/img/logo.png" alt="HeatUup®" style="height:36px;width:auto;">
+			</a>
+			<p class="footer-tagline">We gaan de temperatuur opvoeren, we laten de natuur nooit in de steek.</p>
+						<form class="footer-newsletter" data-newsletter="" method="post" action="/wp-admin/admin-ajax.php">
+				<label class="footer-newsletter__label" for="newsletter-email">Abonneer je op onze nieuwsbrief</label>
+				<div class="footer-newsletter__row">
+					<input type="email" id="newsletter-email" name="email" class="footer-newsletter__input" placeholder="you@example.com" required="">
+					<button type="submit" class="footer-newsletter__btn">Inschrijven</button>
+				</div>
+				<input type="hidden" name="action" value="heatuup_newsletter">
+				<input type="hidden" name="nonce" value="50707ed779">
+				<input type="hidden" name="lang" value="en">
+				<input type="text" name="website" class="footer-newsletter__hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+				<p class="footer-newsletter__msg" role="status" aria-live="polite"></p>
+			</form>
+					</div>
+
+		<div class="footer-links-col">
+			<h4>Product</h4>
+			<ul>
+				<li><a href="#product">Over het product</a></li>
+				<li><a href="#collection">Collectie 2026</a></li>
+				<li><a href="#how-it-works">Hoe werkt onze technologie?</a></li>
+			</ul>
+		</div>
+		<div class="footer-links-col">
+			<h4>Klanten</h4>
+			<ul>
+				<li><a href="#reviews">Reviews</a></li>
+				<li><a href="#contact">Neem contact op</a></li>
+				<li><a href="https://nl.heatuup.com" target="_blank" rel="noopener">heatuup.com</a></li>
+			</ul>
+		</div>
+		<div class="footer-links-col">
+			<h4>Volg ons</h4>
+			<!-- TODO: set real social media URLs -->
+			<ul>
+				<li><a href="#">Instagram</a></li>
+				<li><a href="#">LinkedIn</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="footer-bottom">
+		<p class="footer-copy">© 2026 HeatUup® — Alle rechten voorbehouden.</p>
+		<ul class="footer-bottom-links">
+			<li><a href="#">Privacybeleid</a><!-- TODO: link real Privacy / Terms / Cookie pages --></li>
+			<li><a href="#">Algemene voorwaarden</a></li>
+			<li><a href="#">Cookiebeleid</a></li>
+		</ul>
+	</div>
+</footer>
+
+
+<!-- ============================================================
+	 JAVASCRIPT
+============================================================ -->
+
+
+
+<!-- Exit-intent popup -->
+<div class="exit-overlay" id="exit-overlay">
+	<div class="exit-modal">
+		<button class="exit-modal-close" id="exit-modal-close" aria-label="Close">×</button>
+		<p class="exit-modal-eyebrow">Voordat je gaat</p>
+		<h2 class="exit-modal-title">Neem contact op.<br><em>Geen verplichtingen.</em></h2>
+		<p class="exit-modal-sub">Laat uw gegevens achter en wij sturen u binnen 24 uur een gepersonaliseerd voorstel.</p>
+		<a href="#contact" class="exit-submit" id="exit-submit" style="display:block;text-align:center;text-decoration:none;">Neem contact op</a>
+		<p class="exit-note">Reactie binnen 24 uur. Levering in heel Europa.</p>
+	</div>
+</div>
+
+<!-- WhatsApp number/message per language come from Settings → HeatUup (heatuup_wa_link()). -->
+<!-- Sticky mobile CTA -->
+<div class="sticky-cta" id="sticky-cta">
+	<a href="#contact" class="sticky-cta-btn">Neem contact op</a>
+	<a href="https://wa.me/41762890618" class="sticky-cta-wa" target="_blank" rel="noopener" aria-label="WhatsApp">
+		<svg viewBox="0 0 24 24" fill="white">
+			<path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.157 5.335 5.494.001 12.05.001c3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.867-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.521.149-.172.198-.296.298-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.148.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"></path>
+		</svg>
+	</a>
+</div>
+
+<!-- WhatsApp popup -->
+<div class="wa-popup" id="wa-popup">
+	<button class="wa-popup-close" id="wa-popup-close" aria-label="Close">×</button>
+	<p class="wa-popup-title">Chat direct met ons.</p>
+	<p class="wa-popup-sub">Heeft u vragen over het product of wilt u een offerte op maat? Wij reageren binnen een uur.</p>
+	<a href="https://wa.me/41762890618" class="wa-popup-btn" target="_blank" rel="noopener">
+		<svg width="16" height="16" viewBox="0 0 24 24" fill="white">
+			<path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.157 5.335 5.494.001 12.05.001c3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.867-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.521.149-.172.198-.296.298-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.148.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"></path>
+		</svg>
+		Open WhatsApp
+	</a>
+</div>
+
+<!-- WhatsApp floating button -->
+<a href="https://wa.me/41762890618" class="wa-float" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+	<svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+		<path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.157 5.335 5.494.001 12.05.001c3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.867-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.521.149-.172.198-.296.298-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.148.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"></path>
+	</svg>
+</a>
+
+    <script type="module" src="/src/heatuup.js"></script>
+  </body>
+</html>
