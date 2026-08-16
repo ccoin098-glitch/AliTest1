@@ -47,45 +47,96 @@
             align-items: center;
             text-decoration: none;
             position: relative;
+            line-height: 0;
         }
 
 		.logo-mark img {
-			height: 128px;
+			height: 96px;
 			width: auto;
-			margin-bottom: -64px;
+			margin-bottom: -40px;
+			display: block;
+			transition: height 0.35s ease, margin-bottom 0.35s ease;
 		}
 
+        /* Sit in the logo’s center display — top = half of img height */
         .logo-counter {
             position: absolute;
-            top: 100%;
+            top: 48px;
             left: 50%;
             transform: translate(-50%, -50%);
-            width: 26px;
-            height: 26px;
+            width: 20px;
+            height: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
-            background: #1A1814;
+            background: #0a0a12;
             color: #fff;
             border-radius: 50%;
             font-family: "DSEG7 Classic", ui-monospace, monospace;
             font-weight: 400;
-            font-size: 12px;
+            font-size: 11px;
             line-height: 1;
             pointer-events: none;
             user-select: none;
+            z-index: 2;
+            transition: top 0.35s ease, width 0.35s ease, height 0.35s ease, font-size 0.35s ease;
+        }
+
+        nav.scrolled .logo-mark img {
+            height: 64px;
+            margin-bottom: -18px;
+        }
+
+        nav.scrolled .logo-counter {
+            top: 32px;
+            width: 14px;
+            height: 14px;
+            font-size: 8px;
+        }
+
+        @media screen and (max-width: 860px) {
+            .logo-mark img {
+                height: 52px;
+                margin-bottom: -12px;
+            }
+            .logo-counter {
+                top: 26px;
+                width: 11px;
+                height: 11px;
+                font-size: 7px;
+            }
+            nav.scrolled .logo-mark img {
+                height: 42px;
+                margin-bottom: -6px;
+            }
+            nav.scrolled .logo-counter {
+                top: 21px;
+                width: 9px;
+                height: 9px;
+                font-size: 6px;
+            }
         }
 
         @media screen and (max-width: 480px) {
             .logo-mark img {
-                height: 96px;
-                margin-bottom: -32px;
+                height: 42px;
+                margin-bottom: -6px;
             }
             .logo-counter {
-                top: 75%;
-                width: 15px;
-                height: 15px;
-                font-size: 9px;
+                top: 21px;
+                width: 9px;
+                height: 9px;
+                font-size: 6px;
+            }
+            nav.scrolled .logo-mark img {
+                height: 34px;
+                margin-bottom: -2px;
+            }
+            nav.scrolled .logo-counter {
+                top: 17px;
+                width: 8px;
+                height: 8px;
+                font-size: 5px;
             }
         }
 
