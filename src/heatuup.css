@@ -97,7 +97,7 @@
         @media screen and (max-width: 860px) {
             .logo-mark img {
                 height: 72px;
-                margin-bottom: -18px;
+                margin-bottom: 0;
             }
             .logo-counter {
                 top: 36px;
@@ -105,10 +105,10 @@
                 height: 15px;
                 font-size: 9px;
             }
-            /* Keep logo readable while scrolling on tablets/phones */
+            /* Keep logo readable and centered while scrolling on tablets/phones */
             nav.scrolled .logo-mark img {
                 height: 72px;
-                margin-bottom: -18px;
+                margin-bottom: 0;
             }
             nav.scrolled .logo-counter {
                 top: 36px;
@@ -121,7 +121,7 @@
         @media screen and (max-width: 480px) {
             .logo-mark img {
                 height: 68px;
-                margin-bottom: -16px;
+                margin-bottom: 0;
             }
             .logo-counter {
                 top: 34px;
@@ -131,7 +131,7 @@
             }
             nav.scrolled .logo-mark img {
                 height: 68px;
-                margin-bottom: -16px;
+                margin-bottom: 0;
             }
             nav.scrolled .logo-counter {
                 top: 34px;
