@@ -96,47 +96,48 @@
 
         @media screen and (max-width: 860px) {
             .logo-mark img {
-                height: 64px;
-                margin-bottom: -16px;
+                height: 72px;
+                margin-bottom: -18px;
             }
             .logo-counter {
-                top: 32px;
-                width: 14px;
-                height: 14px;
-                font-size: 8px;
+                top: 36px;
+                width: 15px;
+                height: 15px;
+                font-size: 9px;
             }
+            /* Keep logo readable while scrolling on tablets/phones */
             nav.scrolled .logo-mark img {
-                height: 52px;
-                margin-bottom: -10px;
+                height: 72px;
+                margin-bottom: -18px;
             }
             nav.scrolled .logo-counter {
-                top: 26px;
-                width: 11px;
-                height: 11px;
-                font-size: 7px;
+                top: 36px;
+                width: 15px;
+                height: 15px;
+                font-size: 9px;
             }
         }
 
         @media screen and (max-width: 480px) {
             .logo-mark img {
-                height: 56px;
-                margin-bottom: -12px;
+                height: 68px;
+                margin-bottom: -16px;
             }
             .logo-counter {
-                top: 28px;
-                width: 12px;
-                height: 12px;
-                font-size: 7px;
+                top: 34px;
+                width: 14px;
+                height: 14px;
+                font-size: 8px;
             }
             nav.scrolled .logo-mark img {
-                height: 46px;
-                margin-bottom: -6px;
+                height: 68px;
+                margin-bottom: -16px;
             }
             nav.scrolled .logo-counter {
-                top: 23px;
-                width: 10px;
-                height: 10px;
-                font-size: 6px;
+                top: 34px;
+                width: 14px;
+                height: 14px;
+                font-size: 8px;
             }
         }
 
