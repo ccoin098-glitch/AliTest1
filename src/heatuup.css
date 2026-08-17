@@ -64,7 +64,8 @@
 		}
 
         nav .logo-mark {
-            margin-bottom: -40px;
+            align-self: center;
+            flex-shrink: 0;
         }
 
         /* Center display hole — sized from logo asset proportions */
@@ -90,19 +91,11 @@
             z-index: 2;
         }
 
-        nav.scrolled .logo-mark {
-            margin-bottom: -18px;
-        }
-
         nav.scrolled .logo-mark-inner {
             --logo-h: 64px;
         }
 
         @media screen and (max-width: 860px) {
-            nav .logo-mark {
-                margin-bottom: 0;
-            }
-
             nav .logo-mark-inner {
                 --logo-h: 72px;
             }
