@@ -43,29 +43,38 @@
         }
 
         .logo-mark {
-            display: inline-flex;
-            align-items: center;
+            display: inline-block;
             text-decoration: none;
-            position: relative;
             line-height: 0;
+            vertical-align: middle;
+        }
+
+        .logo-mark-inner {
+            position: relative;
+            display: inline-block;
+            line-height: 0;
+            --logo-h: 96px;
         }
 
 		.logo-mark img {
-			height: 96px;
+			height: var(--logo-h);
 			width: auto;
-			margin-bottom: -40px;
 			display: block;
-			transition: height 0.35s ease, margin-bottom 0.35s ease;
+			transition: height 0.35s ease;
 		}
 
-        /* Sit in the logo’s center display — top = half of img height */
+        nav .logo-mark {
+            margin-bottom: -40px;
+        }
+
+        /* Center display hole — sized from logo asset proportions */
         .logo-counter {
             position: absolute;
-            top: 48px;
+            top: 50%;
             left: 50%;
+            width: calc(var(--logo-h) * 90 / 326);
+            height: calc(var(--logo-h) * 90 / 326);
             transform: translate(-50%, -50%);
-            width: 20px;
-            height: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -74,70 +83,42 @@
             border-radius: 50%;
             font-family: "DSEG7 Classic", ui-monospace, monospace;
             font-weight: 400;
-            font-size: 11px;
+            font-size: calc(var(--logo-h) * 90 / 326 * 0.46);
             line-height: 1;
             pointer-events: none;
             user-select: none;
             z-index: 2;
-            transition: top 0.35s ease, width 0.35s ease, height 0.35s ease, font-size 0.35s ease;
         }
 
-        nav.scrolled .logo-mark img {
-            height: 64px;
+        nav.scrolled .logo-mark {
             margin-bottom: -18px;
         }
 
-        nav.scrolled .logo-counter {
-            top: 32px;
-            width: 14px;
-            height: 14px;
-            font-size: 8px;
+        nav.scrolled .logo-mark-inner {
+            --logo-h: 64px;
         }
 
         @media screen and (max-width: 860px) {
-            .logo-mark img {
-                height: 72px;
+            nav .logo-mark {
                 margin-bottom: 0;
             }
-            .logo-counter {
-                top: 36px;
-                width: 15px;
-                height: 15px;
-                font-size: 9px;
+
+            nav .logo-mark-inner {
+                --logo-h: 72px;
             }
-            /* Keep logo readable and centered while scrolling on tablets/phones */
-            nav.scrolled .logo-mark img {
-                height: 72px;
-                margin-bottom: 0;
-            }
-            nav.scrolled .logo-counter {
-                top: 36px;
-                width: 15px;
-                height: 15px;
-                font-size: 9px;
+
+            nav.scrolled .logo-mark-inner {
+                --logo-h: 72px;
             }
         }
 
         @media screen and (max-width: 480px) {
-            .logo-mark img {
-                height: 68px;
-                margin-bottom: 0;
+            nav .logo-mark-inner {
+                --logo-h: 68px;
             }
-            .logo-counter {
-                top: 34px;
-                width: 14px;
-                height: 14px;
-                font-size: 8px;
-            }
-            nav.scrolled .logo-mark img {
-                height: 68px;
-                margin-bottom: 0;
-            }
-            nav.scrolled .logo-counter {
-                top: 34px;
-                width: 14px;
-                height: 14px;
-                font-size: 8px;
+
+            nav.scrolled .logo-mark-inner {
+                --logo-h: 68px;
             }
         }
 

@@ -416,10 +416,10 @@
 		} );
 	} )();
 
-	/* Logo scroll counter — 1:1 van WebAlly header-counter.js */
+	/* Logo scroll counter */
 	( function () {
 		var MIN = 16, MAX = 99;
-		var anchor = document.querySelector( '.logo-mark' );
+		var anchor = document.querySelector( 'nav .logo-mark-inner' );
 		if ( ! anchor ) {
 			return;
 		}
